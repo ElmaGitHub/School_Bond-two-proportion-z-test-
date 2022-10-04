@@ -1,0 +1,8 @@
+import numpy as np
+from statsmodels.stats.proportion import proportions_ztest
+
+stat, pval = proportions_ztest([374, 171], [503, 245])
+print(stat,pval)
+
+##p-value> 0.05, which means that the sample gives evidence that there is not a significant difference in the proportions of favorable in either with or 
+#without age children.
